@@ -1,0 +1,24 @@
+---
+import Title from './Title.astro';
+import Nav from './Nav.astro';
+const { current = '' } = Astro.props;
+---
+
+<header>
+	
+	<Title />
+	<Nav current={current} />
+
+</header>
+<style>
+	header {
+
+		margin: 0 auto;
+		padding: 2em;
+		display: flex;
+    padding: 2em;
+    width: 100%;
+		max-width: 1368px;
+	}
+	
+</style>

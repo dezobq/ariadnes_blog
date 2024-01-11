@@ -1,0 +1,90 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+---
+
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} >
+		<div class="home-container">
+				<div class="home-copy">
+					<h1>Welcome to Ariadne’s Thread!</h1>
+					<p>In this space, we delve into the essence of the name we carry. Ariadne’s Thread is more than a reference to Greek mythology; it’s an invitation to find the way back, a guide through the complexities of modern labyrinths.</p>
+					<p>Inspired by the story of Ariadne, who gave Theseus a ball of yarn to navigate the labyrinth and find his way out, we strive to be a guiding thread for those facing similar challenges. Here, we primarily explore the journey of those living with ADHD.</p>
+					<p>This is a place of understanding, where we discuss not only the problems but also the nuances, talents, and strategies for overcoming. Attention Deficit Hyperactivity Disorder (ADHD) may present obstacles, yet it can also be a source of uniqueness and creativity.</p>
+					<p>Throughout our articles, we address not just the difficulties of ADHD but also diverse management methods, the role of medication, everyday strategies, and, above all, the importance of a supportive community.</p>
+					<p>Discover inspiring stories, practical tips, and a sensitive look at the nuances of ADHD. Navigate mental labyrinths with us, finding the way back together.</p>
+					<p>Be part of this journey. Be part of the guiding thread that, like Ariadne, leads to the labyrinth’s exit.</p>
+					<p>Join us as we explore, learn, and grow together!</p>
+				</div>
+			</div>
+		</BaseLayout>	
+
+		<style>
+			.home-container {
+				align-items: center;
+				display: flex;
+				flex: 1;
+				justify-content: center;
+				margin: 2em 0;
+				min-height: 400px;
+			}
+		
+			.home-copy {
+				flex: 1;
+				padding: 0 1em;
+			}
+		
+			.home-copy h1 {
+				font-weight: 700;
+				margin-bottom: 0.5em;
+				line-height: 1.3;
+			}
+		
+			.home-copy p {
+				font-size: 1.4em;
+			}
+		
+			.hero-image-container {
+				margin: 0 1em;
+				text-align: center;
+			}
+		
+			.hero-image-container picture {
+				display: block;
+				min-height: 250px;
+			}
+		
+			.caption {
+				font-size: .8em;
+				font-style: italic;
+				text-align: left;
+			}
+		
+			.hero-image {
+				width: 100%;
+				max-width: 550px;
+				margin-bottom: 1em;
+			}
+		
+			@media (max-width: 1200px) {
+				p {
+					font-size: 1.2em;
+				}
+		
+				.hero-image {
+					max-width: 400px;
+				}
+			}
+		
+			@media (max-width: 800px) {
+				.home-container {
+					flex-direction: column;
+				}
+		
+				.home-copy {
+					flex: 0;
+					padding-bottom: 2em;
+					text-align: center;
+				}
+			}
+		</style>
